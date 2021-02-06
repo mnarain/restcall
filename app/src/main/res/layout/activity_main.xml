@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/land"
+        android:layout_width="217dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginBottom="346dp"
+        android:text=""
+        android:hint="Land"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hoofdstad" />
+
+    <TextView
+        android:id="@+id/hoofdstad"
+        android:layout_width="217dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginBottom="34dp"
+        android:hint="hoofdstad"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/land"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regio" />
+
+    <TextView
+        android:id="@+id/regio"
+        android:layout_width="217dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginBottom="43dp"
+        android:text=""
+        android:hint="regio"
+        app:layout_constraintBottom_toBottomOf="@+id/hoofdstad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/countryd_dropdown"
+        android:layout_width="339dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="242dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/land"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
